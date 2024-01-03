@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<web-app>
+<servlet>
+<servlet-name>ApplyOuting</servlet-name>
+<servlet-class>ApplyOuting</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ApplyOuting</servlet-name>
+<url-pattern>/ApplyOuting</url-pattern>
+</servlet-mapping>
+<welcome-file-list>
+<welcome-file>home.html</welcome-file>
+</welcome-file-list>
+</web-app>

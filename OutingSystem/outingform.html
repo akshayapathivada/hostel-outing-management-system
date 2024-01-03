@@ -1,0 +1,157 @@
+<html>
+<head>
+  <title>Outing Application Form</title>
+  <style>
+  body {
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    color: #022d36;
+    padding: 20px;
+    margin: 0;
+  }
+
+  form {
+    background-color: #e8f5ff;
+    margin: auto;
+    width: 550px;
+    box-shadow: 3px 4px 4px #76c1d4;
+    border-radius: 10px;
+    padding: 20px;
+    transition: width 2s, height 2s;
+    height: 680px;
+  }
+
+  /* Rest of the styles remain the same */
+  /* ... */
+
+
+    form table {
+      width: 100%;
+    }
+
+    form table td {
+      padding: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="date"],
+    form textarea,
+    form select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 1px 2px 2px #cd5554;
+      background-color: #ffffff;
+    }
+
+    form input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    form button {
+      background-color: #24305e;
+      color: white;
+      text-align: center;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    form button:hover {
+      background-color: white;
+      color: #24305e;
+      font-weight: bold;
+      border: 1px solid #24305e;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Apply for Outing</h1>
+  <form action="./ApplyOuting" method="post">
+    <table>
+      <tr>
+        <td><b>Registered Number:</b></td>
+        <td><input type="text" placeholder="Enter number" name="redg" required /></td>
+      </tr>
+      <tr>
+        <td><b>Name of the Student:</b></td>
+        <td><input type="text" placeholder="Enter name" name="name" required /></td>
+      </tr>
+      <tr>
+        <td><b>Year of Study:</b></td>
+        <td>
+          <select name="year">
+            <option disabled selected>Choose year</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><b>Branch:</b></td>
+        <td><input type="text" placeholder="Enter branch" name="branch" required /></td>
+      </tr>
+      <tr>
+        <td><b>Student Phone Number:</b></td>
+        <td><input type="text" placeholder="Enter phone number" name="phone" required /></td>
+      </tr>
+      <tr>
+        <td><b>Parent Phone Number:</b></td>
+        <td><input type="text" placeholder="Enter parent phone number" name="pphone" required /></td>
+      </tr>
+      <tr>
+        <td><b>From Date:</b></td>
+        <td><input type="date" name="outdate" required /></td>
+      </tr>
+      <tr>
+        <td><b>To Date:</b></td>
+        <td><input type="date" name="indate" required /></td>
+      </tr>
+      <tr>
+        <td><b>Reason:</b></td>
+        <td><textarea rows="3" cols="22" name="reason" required></textarea></td>
+      </tr>
+      <tr>
+        <td><b>Place:</b></td>
+        <td><input type="text" name="place" required /></td>
+      </tr>
+      <tr>
+        <td><b>Choose an option:</b></td>
+        <td>
+          <input type="radio" name="a" value="local" /> Local
+          <input type="radio" name="a" value="general" /> General
+          <input type="radio" name="a" value="emergency" /> Emergency
+        </td>
+      </tr>
+      <tr>
+        <td><b>Choose an option:</b></td>
+        <td>
+          <input type="radio" name="b" value="self" /> Self
+          <input type="radio" name="b" value="guardian" /> Guardian
+          <input type="radio" name="b" value="parent" /> Parent
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Apply</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

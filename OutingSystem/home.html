@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outing System</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('holidays.jpg');
+      background-size: 100%140%;
+      background-repeat: no-repeat;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      height: 70px;
+      margin-right: 10px;
+    }
+    #studentlogin{
+      padding:10px;
+      border-radius:10px 10px 10px 10px;
+      background-color:#cce6ff;
+    }
+    #facultylogin{
+      padding:10px;
+      border-radius:10px 10px 10px 10px;
+      background-color:#f2d9e6;
+    }
+    #wardenlogin{
+      padding:10px;
+      border-radius:10px 10px 10px 10px;
+      background-color:#c1c1f0;
+    }
+    .btn{
+      margin-left:50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="logo.jpg" alt="Logo"></div>
+  <h1 class="text-center">SHRI VISHNU ENGINEERING COLLEGE FOR WOMEN</h1>
+  <div class="container">
+    <h1 class="text-center mt-3">Outing System</h1>
+    <div class="row justify-content-center mt-3">
+      <div id ="studentlogin" class="col-md-3">
+        <h2 class="text-center">Student Login</h2>
+        <form id="studentLoginForm" action="StudentLogin.jsp">
+          <div class="mb-2">
+            <label for="studentUsername" class="form-label">Username</label>
+            <input type="text" class="form-control" name="studentUsername" id="studentUsername" placeholder="Enter your username" required>
+          </div>
+          <div class="mb-2">
+            <label for="studentPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="studentPassword" name="studentPassword" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+&nbsp;&nbsp;
+      <div id="facultylogin" class="col-md-3">
+        <h2 class="text-center">Faculty Login</h2>
+        <form id="facultyLoginForm" action="StudentList.jsp">
+          <div class="mb-3">
+            <label for="facultyUsername" class="form-label">Username</label>
+            <input type="text" class="form-control" id="facultyUsername" name="facultyUsername" placeholder="Enter your username" required>
+          </div>
+          <div class="mb-2">
+            <label for="facultyPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="facultyPassword" name="facultyPassword" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+&nbsp;&nbsp;
+      <div id="wardenlogin" class="col-md-3">
+        <h2 class="text-center">Warden Login</h2>
+        <form id="wardenLoginForm" action="warden.jsp">
+          <div class="mb-3">
+            <label for="wardenUsername" class="form-label">Username</label>
+            <input type="text" class="form-control" name="wardenUsername" id="wardenUsername" placeholder="Enter your username" required>
+          </div>
+          <div class="mb-3">
+            <label for="wardenPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" name="wardenPassword" id="wardenPassword" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <span style="margin-left: 650px;">
+    <a href="SearchDelete.jsp" >Update Student OUT Status</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="SearchDelete1.jsp">Update Student IN Status</a>
+  </span>
+  </div

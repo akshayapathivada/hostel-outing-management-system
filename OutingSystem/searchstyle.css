@@ -1,0 +1,16 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family:sans-serif;
+}
+body{
+    background:#3e5669;
+}
+
+.search{
+    border:3px solid #32e17c;
+    height:40px;
+    width:300px;
+    border-radius:50px;
+    padding:0px 10px;
+}
